@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <form method="post" action="/process">
+        <label>Enter the upper-right coordinates of the warehouse (e.g., 55)</label>
+        <input type="number" name="size" placeholder="55"/>
+        <label>Enter the robot's position (e.g., 1 2 N)</label>
+        <input type="text" name="position" placeholder="12N"/>
+        <label>Enter the robot's instructions (e.g., LMLMLMLMM)</label>
+        <input type="text" name="instructions" value="" placeholder="LMLMLMLMM"/>
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+</html>
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Animation</title>
+    <link rel="stylesheet" href="index.css"/>
+    <style>
+        /* CSS for the animation */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: moveAnimation 2s ease infinite;
+        }
+
+        /* CSS keyframes for the animation */
+        @keyframes moveAnimation {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML element with the animation -->
+    <div class="animated-element"></div>
+
+    <!-- JavaScript to stop the animation on click -->
+    <script>
+        const animatedElement = document.querySelector('.animated-element');
+
+        <form>
+        <label>Enter the upper-right coordinates of the warehouse (e.g., 55)</label>
+        <input type="number" name="size" placeholder="55"/>
+        <label>Enter the robot's position (e.g., 12N)</label>
+        <input type="text" name="position" placeholder="12N"/>
+        <label>Enter the robot's instructions (e.g., LMLMLMLMM)</label>
+        <input type="text" name="instructions" value="" placeholder="LMLMLMLMM"/>
+    </form>
+        
+        animatedElement.addEventListener('click', () => {
+            animatedElement.style.animationPlayState = 'paused';
+        });
+    </script>
+</body>
+</html> -->
